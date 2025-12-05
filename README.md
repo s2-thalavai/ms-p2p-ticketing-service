@@ -101,3 +101,50 @@ This microservice follows **Hexagonal Architecture (Ports & Adapters)** to ensur
     
 -   Automated inbox workflow replacement
 
+------
+
+## 1. Run these commands in Git Bash / Linux / Mac
+
+```bash
+mkdir -p ms-p2p-ticketing-service
+cd ms-p2p-ticketing-service
+
+# Django project folder (already created by startproject)
+mkdir -p config
+
+# Django apps folder
+mkdir -p apps
+
+# Hexagonal Architecture folders
+mkdir -p domain/entities
+mkdir -p domain/services
+
+mkdir -p application/use_cases
+
+mkdir -p ports
+
+mkdir -p infrastructure/api
+mkdir -p infrastructure/email
+mkdir -p infrastructure/persistence
+mkdir -p infrastructure/tasks
+
+# Required __init__.py files so Python can import these modules
+touch apps/__init__.py
+
+touch domain/__init__.py
+touch domain/entities/__init__.py
+touch domain/services/__init__.py
+
+touch application/__init__.py
+touch application/use_cases/__init__.py
+
+touch ports/__init__.py
+
+touch infrastructure/__init__.py
+touch infrastructure/api/__init__.py
+touch infrastructure/email/__init__.py
+touch infrastructure/persistence/__init__.py
+touch infrastructure/tasks/__init__.py
+
+```
+
